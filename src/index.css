@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-gray-50 text-gray-800 antialiased; }
+
+/* Markdown 渲染样式 */
+.prose-blog h1 { @apply text-2xl font-bold mt-6 mb-3; }
+.prose-blog h2 { @apply text-xl font-bold mt-5 mb-2; }
+.prose-blog h3 { @apply text-lg font-semibold mt-4 mb-2; }
+.prose-blog p  { @apply my-3 leading-7; }
+.prose-blog ul { @apply list-disc pl-6 my-3; }
+.prose-blog ol { @apply list-decimal pl-6 my-3; }
+.prose-blog code { @apply bg-gray-100 text-pink-600 px-1.5 py-0.5 rounded text-sm font-mono; }
+.prose-blog pre  { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-4; }
+.prose-blog pre code { @apply bg-transparent text-gray-100 p-0; }
+.prose-blog blockquote { @apply border-l-4 border-gray-300 pl-4 text-gray-600 italic my-3; }
+.prose-blog a { @apply text-blue-600 hover:underline; }
+.prose-blog img { @apply rounded-lg my-4 max-w-full; }
+.prose-blog hr { @apply my-6 border-gray-200; }
